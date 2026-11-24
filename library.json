@@ -1,6 +1,6 @@
 {
   "name": "m5gfx-fonts-ecam",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "ECAM font pack (VLW + GFX) for M5GFX. Optional m5gfx-flight-ui integration via ecam_fonts::install().",
   "keywords": [
     "fonts",

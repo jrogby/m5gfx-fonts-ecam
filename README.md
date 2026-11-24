@@ -18,7 +18,7 @@ ecam_fonts::install();   // in setup(), before pages draw
 ```ini
 lib_deps =
   https://github.com/jrogby/m5gfx-flight-ui.git#v0.1.0
-  https://github.com/jrogby/m5gfx-fonts-ecam.git#v0.1.0
+  https://github.com/jrogby/m5gfx-fonts-ecam.git#v0.2.0
 ```
 
 Example: [examples/install](examples/install/install.ino). License: GPL-2.0-or-later ([LICENSE](LICENSE)).
