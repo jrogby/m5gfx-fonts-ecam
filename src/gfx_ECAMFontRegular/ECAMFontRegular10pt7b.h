@@ -1,5 +1,5 @@
 #pragma once
-#include "flightui/types.h"
+#include <M5GFX.h>
 
 
 const uint8_t ECAMFontRegular10pt7bBitmaps[] PROGMEM = {

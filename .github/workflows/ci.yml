@@ -3,13 +3,20 @@ on: [push, pull_request]
 jobs:
   build:
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        include:
+          - example: standalone
+            deps: "m5stack/M5Unified"
+          - example: install
+            deps: "m5stack/M5Unified, https://github.com/jrogby/m5gfx-flight-ui.git#v0.1.0"
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with: { python-version: "3.11" }
       - run: pip install platformio
       - run: >
-          pio ci examples/install/install.ino --lib . -b m5stack-core2
+          pio ci examples/${{ matrix.example }}/${{ matrix.example }}.ino --lib . -b m5stack-core2
           -O "build_flags=-std=gnu++17"
           -O "build_unflags=-std=gnu++11"
-          -O "lib_deps=m5stack/M5Unified, https://github.com/jrogby/m5gfx-flight-ui.git#v0.1.0"
+          -O "lib_deps=${{ matrix.deps }}"

@@ -1,6 +1,6 @@
 #pragma once
 
-#include "flightui/types.h"
+#include <M5GFX.h>
 #include "ECAMFontRegular10pt7b.h"
 #include "ECAMFontRegular13pt7b.h"
 #include "ECAMFontRegular15pt7b.h"

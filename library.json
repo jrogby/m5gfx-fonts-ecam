@@ -1,22 +1,56 @@
 {
   "name": "m5gfx-fonts-ecam",
   "version": "0.1.0",
-  "description": "ECAM font pack (VLW + GFX) for m5gfx-flight-ui. Fills flightui font slots via ecam_fonts::install().",
-  "keywords": ["fonts", "ecam", "m5stack", "vlw", "aviation"],
+  "description": "ECAM font pack (VLW + GFX) for M5GFX. Optional m5gfx-flight-ui integration via ecam_fonts::install().",
+  "keywords": [
+    "fonts",
+    "ecam",
+    "m5stack",
+    "vlw",
+    "aviation"
+  ],
   "license": "GPL-2.0-or-later",
-  "authors": [{ "name": "Jonatan R. Lindberg", "maintainer": true }],
-  "repository": { "type": "git", "url": "https://github.com/jrogby/m5gfx-fonts-ecam.git" },
-  "frameworks": ["arduino"],
-  "platforms": ["espressif32"],
+  "authors": [
+    {
+      "name": "Jonatan R. Lindberg",
+      "maintainer": true
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jrogby/m5gfx-fonts-ecam.git"
+  },
+  "frameworks": [
+    "arduino"
+  ],
+  "platforms": [
+    "espressif32"
+  ],
   "dependencies": {
-    "m5stack/M5GFX": "^0.2.0",
-    "m5gfx-flight-ui": "^0.1.0"
+    "m5stack/M5GFX": "^0.2.0"
   },
   "examples": [
-    { "name": "Install", "base": "examples/install", "files": ["install.ino"] }
+    {
+      "name": "Install",
+      "base": "examples/install",
+      "files": [
+        "install.ino"
+      ]
+    },
+    {
+      "name": "Standalone",
+      "base": "examples/standalone",
+      "files": [
+        "standalone.ino"
+      ]
+    }
   ],
   "export": {
-    "exclude": ["tools/__pycache__", ".github", "*.DS_Store"]
+    "exclude": [
+      "tools/__pycache__",
+      ".github",
+      "*.DS_Store"
+    ]
   },
   "build": {
     "srcDir": "src",

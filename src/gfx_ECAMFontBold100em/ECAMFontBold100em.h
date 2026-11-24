@@ -1,5 +1,5 @@
 #pragma once
-#include "flightui/types.h"
+#include <M5GFX.h>
 
 // Not so nice?
 #include "ECAMFontBold100em7pt7bData.h" // Approx. 1185 bytes
