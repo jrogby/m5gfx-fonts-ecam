@@ -1,5 +1,7 @@
 # m5gfx-fonts-ecam
 
+[![build examples](https://github.com/jrogby/m5gfx-fonts-ecam/actions/workflows/ci.yml/badge.svg?event=status)](https://github.com/jrogby/m5gfx-fonts-ecam/actions/workflows/ci.yml)
+
 ECAM font pack for `m5gfx-flight-ui`. Kept separate because the font is **GPL-2.0-or-later**
 (from the FlightGear A320-family aircraft, github.com/legoboyvdlp/A320-family `Fonts/`;
 "Copyright (c) 2025 Josh Davidson, Jonathan Redpath, merspieler, Matthew Maring, Thorsten Herrmann, Semir Gebran").
