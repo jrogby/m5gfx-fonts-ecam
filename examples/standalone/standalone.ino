@@ -9,7 +9,7 @@ void setup() {
   M5.Display.loadFont(ecam_fonts::vlw::ECAMFontRegular22);
   M5.Display.drawString("ECAM VLW 22", 10, 10);
   M5.Display.unloadFont();
-  M5.Display.setFont(&ECAMFontBold100em16pt7b);
+  M5.Display.setFont(&ecam_fonts::gfx::ECAMFontBold100em16pt7b);
   M5.Display.drawString("ECAM GFX 16", 10, 60);
 }
 
